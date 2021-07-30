@@ -1,1 +1,2 @@
 This is second test file for my Git lessons.
+This line mean changes to this file.

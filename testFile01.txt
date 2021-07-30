@@ -1,3 +1,7 @@
 This is second test file for my Git lessons.
+<<<<<<< HEAD
 This line mean changes to this file.
 Another one change to the file.
+=======
+This line mean changes to this file.
+>>>>>>> b710f1e1d5fc5155cb11502b0c2f0e461d4802fa

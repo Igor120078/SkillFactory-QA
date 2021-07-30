@@ -1,1 +1,2 @@
-This is a new file for my Git lessons. 
+This is a new file for my Git lessons.
+Anothe line is added.

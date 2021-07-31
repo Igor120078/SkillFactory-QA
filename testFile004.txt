@@ -1,1 +1,0 @@
-Test string in new file testFile004.txt

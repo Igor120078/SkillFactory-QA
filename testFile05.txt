@@ -1,1 +1,0 @@
-New testFile05.txt created to test pull from origin to local repository

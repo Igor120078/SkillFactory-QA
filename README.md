@@ -1,2 +1,2 @@
 # SkillFactory-QA
-Public repository for SkillFactory QA course - training GitHub use
+Public repository for SkillFactory QA course

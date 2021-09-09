@@ -12,6 +12,10 @@ def get_tickets_number():
     print(SEP1, 'Welcome to our price calculating system'.center(50), SEP1, sep='\n')
     try:
         tickets = int(input("Enter a number of tickets you want to buy: "))
+        if tickets <= 0:
+            print(SEP2, 'Sorry, but to determine the number of tickets you must enter a positive number.',
+            'See you next time.', sep='\n')
+            exit()
         print(SEP2)
         return tickets
     except ValueError:

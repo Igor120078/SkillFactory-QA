@@ -16,25 +16,27 @@ def get_tickets_number():
     try:
         tickets = int(input("Enter a number of tickets you want to buy: "))
         if tickets <= 0:
-            print(SEP2, 'Sorry, but to determine the number of tickets you must enter a positive number.',
-                  'See you next time.', sep='\n')
+            wrong_input()
             exit()
         print(SEP2)
         return tickets
     except ValueError:
-        print(SEP2, 'You have enter a whole number! See you next time.', sep='\n')
+        wrong_input()
         exit()
 
 
 def get_guests_age(num):
     guests = {}
     for n in range(1, num + 1):
-        age_ = int(input(f'Enter the age of the guest #{n}: '))
-        if age_ <= 0:
-            print(SEP2, 'Sorry, but to determine the age of the guest you must enter a positive number.',
-                  'See you next time.', sep='\n')
+        try:
+            age_ = int(input(f'Enter the age of the guest #{n}: '))
+            if age_ <= 0:
+                wrong_input()
+                exit()
+            guests['guest_' + str(n)] = age_
+        except ValueError:
+            wrong_input()
             exit()
-        guests['guest_' + str(n)] = age_
 
     return guests
 
@@ -59,6 +61,11 @@ def get_tickets_price(guests):
             total_price += 1390
     total_price *= (1 - discount)
     return total_price
+
+
+def wrong_input():
+    print(SEP2, 'Sorry, but you have to enter a whole positive number.',
+          'See you next time.', sep='\n')
 
 
 if __name__ == '__main__':
